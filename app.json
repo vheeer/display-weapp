@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/company/company",
+    "pages/culture/culture",
+    "pages/contact/contact",
+    "pages/goods/goods",
+    "pages/i/i",
+    "pages/show/show",
+    "pages/logs/logs",
+    "pages/call/call",
+    "pages/caseServer/caseServer",
+    "pages/serverIntro/serverIntro"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "多嘴肉蟹煲武清店",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系电话"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "在线沟通"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

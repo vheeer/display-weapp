@@ -1,0 +1,29 @@
+/* pages/caseServer/caseServer.wxss */
+image {
+  display: inline-block;
+}
+.box {
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+.caseBlock {
+  -height:594px;
+  border-bottom:dashed 1px gray;
+  width:100%;
+  padding:3px;
+
+
+}
+.title {
+  font-size:13px;
+  color:#222222;
+  text-align:center;
+  padding:10px 0px 10px 0;
+
+}
+.caseImg {
+  -height:545px;
+width:100%;
+  margin-bottom: 10rpx;
+}

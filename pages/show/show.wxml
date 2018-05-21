@@ -1,0 +1,23 @@
+<!--pages/test/test.wxml-->
+<import src="../../config.js" />
+<text>图片查看</text>
+<view class="block">
+  <view>本地: ../../demo.jpg{{host}}</view>
+  <image src="../../demo.jpg"></image>
+</view>
+<view class="block">
+  <view>远程本腾讯服务器: https://14321283.dapingkeji.com/demo.jpg</view>
+  <image src="https://14321283.dapingkeji.com/demo.jpg"></image>
+</view>
+<view class="block">
+  <view>远程外腾讯服务器: https://67668077.yinmudianying.club/5291221ee711f_副本.jpg</view>
+  <image src="https://67668077.yinmudianying.club/5291221ee711f_副本.jpg"></image>
+</view>
+<view class="block">
+  <view>远程外阿里服务器: http://www.vheeer.com/pic/LOGO.png</view>
+  <image src="http://www.vheeer.com/pic/LOGO.png"></image>
+</view>
+<view class="block">
+  <view>豆瓣: https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2381935440.jpg</view>
+  <image src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2381935440.jpg"></image>
+</view>

@@ -1,0 +1,15 @@
+<!--pages/caseServer/caseServer.wxml-->
+<import src="../../template/item-template.wxml"/> 
+<view>
+  <view class="box">
+    <block wx:for="{{globalData.globalData.theCase}}" wx:key="{{index}}">
+        <view class="caseBlock">  
+          <view class="title">{{item.title}}</view>  
+          <block wx:for="{{item.imgs}}" wx:key="{{index}}">
+            <image class="caseImg" mode="widthFix" data-src="{{item.url}}" src="{{item.url}}" bindtap="imgTap"></image>
+          </block>
+        </view>  
+    </block>
+  </view>
+  <template is="contact" data="{{...globalData.globalData.contact}}"></template>
+</view>

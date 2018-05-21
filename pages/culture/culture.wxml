@@ -1,0 +1,13 @@
+<!--pages/culture/culture.wxml-->
+
+<view>
+  <image mode="widthFix" src="{{globalData.globalData.culture.img}}"></image>
+</view>
+<view class="server">
+  <!-- <view>1. 用我们真诚的微笑，换取客户对我们服务的满意; 　　</view>
+  <view>2. 服务理念，一切为了客户，为了客户一切，为了一切客户。 　　</view>
+  <view>3. 为你所想 为你所乐 为我人生 创造辉煌。 　　</view>
+  <view>4. 以人为本 以客为尊 卓越服务 　　</view>
+  <view>5. 保证服务品质，满足客户需求</view> -->
+  <view class="intro">{{globalData.globalData.culture.desc}}</view>
+</view>

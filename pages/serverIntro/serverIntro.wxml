@@ -1,0 +1,25 @@
+<!--pages/serverIntro/serverIntro.wxml-->
+<import src="../../template/item-template.wxml"/> 
+<!-- <view class="first">
+  <image class="firstImg" src="{{config.host + '/5291221ee711f.jpg'}}"></image>
+</view>
+<view class="second">
+  <image class="secondImg" src="{{config.host + '/570598351681827053_副本.jpg'}}"></image>
+</view> -->
+
+<view>
+  <view class="box">
+    <block wx:for="{{globalData.globalData.theService}}" wx:key="{{index}}">
+        <view class="caseBlock">  
+          <view class="title">{{item.title}}</view>  
+          <block wx:for="{{item.imgs}}" wx:key="{{index}}">
+            <image class="caseImg" mode="widthFix" src="{{item.url}}" data-src="{{item.url}}" bindtap="imgTap"></image>
+          </block>
+        </view>  
+    </block>
+  </view>
+  <view wx:if="{{globalData.globalData.serviceDesc}}" class="txt">
+  {{globalData.globalData.serviceDesc}}
+  </view>
+  <template is="contact" data="{{...globalData.globalData.contact}}"></template>
+</view>

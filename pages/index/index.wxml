@@ -1,0 +1,96 @@
+<import src="../../template/item-template.wxml"/> 
+
+<!-- <template is="page_goods_tmpl" data="{{...item}}"></template> -->
+<view class="main">
+  <view class="wrap">
+    <!-- 标题栏 -->
+    <view class="topBar">
+      <navigator class="topBarItem" url="../index/index">
+        <text class="iconfont icon-chanpinzhongxin"></text>  
+        <view class="itemText">产品中心</view>
+      </navigator>
+      <navigator class="topBarItem" url="../i/i">
+        <text class="iconfont icon-gongsijieshao"></text>  
+        <view class="itemText">公司介绍</view>
+      </navigator>
+      <navigator class="topBarItem" url="../call/call">
+        <text class="iconfont icon-lianxiwomen"></text>  
+        <view class="itemText">联系我们</view>
+      </navigator>
+      <navigator class="topBarItem" url="../culture/culture">
+        <text class="iconfont icon-qiyewenhua"></text>  
+        <view class="itemText" >企业文化</view>
+      </navigator>
+    </view>
+    <!-- 标题栏结束 -->
+    <!-- 首页大图 -->
+    
+      <swiper 
+        indicator-dots="{{false}}" 
+        autoplay="{{true}}" 
+        interval="{{3000}}" 
+        duration="{{700}}"
+        circular="{{true}}"
+        indicator-dots="{{true}}"
+        indicator-color="{rgba(103, 102, 109, 0.63)}"
+        indicator-active-color="rgba(103, 102, 109, 0.9)"
+      >
+        <block wx:for="{{data.theBannar[0].imgs}}">
+          <swiper-item>
+            <image src="{{item.url}}" mode='aspectFill' class="slide-image" width="100%" height="150"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    <!-- 首页大图结束 -->
+    <!-- 视频播放开始 -->
+    <!-- <view class="section tc">
+      <video id="myVideo" 
+  src="http://o9obz49zv.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AE%A3%E4%BC%A0%E7%89%871.mp4"  poster="https://daping-1255763133.cos.ap-beijing.myqcloud.com/weapp-video-post.jpg" danmu-list="{{danmuList}}" 
+  enable-danmu danmu-btn controls
+></video>
+      
+  <view class="btn-area">
+  </view>
+</view> -->
+
+    <!-- 视频播放结束 -->
+    <!-- 产品列表 -->
+    <view class="caseIntro">
+      <template is="tag" data="{{tag: data.goodsTitle}}"></template>
+      <view class="goods" wx:for="{{goods}}" wx:key="index">
+        <view class="buy_box">
+           <button wx:if="{{item.price}}" class="buy" bindtap="buyOnTap" data-good="{{item}}">￥{{item.price}}</button> 
+        </view>
+        <navigator class="good" url="{{'../goods/goods?good_id='+item.id}}" bindtap="goodOnTap" data-index="{{item}}">
+          <!-- 产品大图 -->
+          <image src="{{item.img}}" mode="widthFix" class="goodImg"></image>
+        </navigator>
+      </view> 
+    </view>
+    <!-- 产品列表结束 -->
+    <!-- 案例服务 -->
+    <view class="caseServer">
+      <template is="tag" data="{{tag: tags[1]}}"></template>
+      <view class="caseServer-box">
+        <navigator url="../../pages/caseServer/caseServer" class="caseShow">
+          <image class="caseServerImg" mode="aspectFill" src="{{data.show.img}}"></image>
+        </navigator>
+        <navigator url="../../pages/serverIntro/serverIntro" class="serverIntro">
+          <image class="caseServerImg" mode="aspectFill" src="{{data.service.img}}"></image>
+        </navigator>
+      </view>
+    </view>
+    <!-- 案例服务结束 -->
+    <!-- 支付按钮 -->
+    <!-- <view bindtap="login">
+      <template is="tag" data="{{tag: \"点击登陆\"}}"></template>
+    </view>
+    <view bindtap="pay">
+      <template is="tag" data="{{tag: \"点击支付\"}}"></template>
+    </view> -->
+    <!-- 支付按钮结束 -->
+    <!-- 联系我们 -->
+    <template is="contact" data="{{...data.contact}}"></template>
+    <!-- 联系我们结束 -->
+  </view>
+</view>

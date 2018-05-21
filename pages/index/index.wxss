@@ -1,0 +1,95 @@
+/* pages/index/index.wxss */
+.topBar {
+  display: flex; 
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.topBarItem {
+  -flex-direction: row;
+  flex-grow: 1;
+  padding: 25rpx 0 13rpx;
+  background-color: #eeeeee;
+  text-align: center;
+}
+.itemText {
+  position: relative;
+  font-size: 20rpx;
+  color: #666666;
+  margin-top:21rpx;
+}
+.goodMes {
+  font-size: 28rpx;
+}
+.goodImg {
+  width: 100%;
+}
+.goodTitle {
+  font-size:28rpx;
+  padding:20rpx 35rpx 20rpx 35rpx;
+}
+.goodDesc {
+  padding:0rpx 35rpx 20rpx 35rpx;
+  color:gray;
+  line-height:36rpx;
+  font-size:26rpx;
+}
+.bannarImg {
+  width: 100%;
+  height: 213px;
+}
+.caseServer {
+
+}
+.caseServer-box {
+  display: flex;
+}
+.caseShow {
+  width: 50%;
+}
+.serverIntro {
+  width: 50%;
+}
+.caseServerImg {
+  width: 100%;
+  height:108px;
+}
+.buy_box {
+  position:absolute;
+  right:20px;
+  bottom:20px;
+}
+.buy {
+
+}
+.goods {
+  position: relative;
+}
+swiper {
+  height: 130px;
+}
+swiper image {
+  width: 100%;
+  height: 130px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.ql-align-center {
+  text-align: center;
+}
+.ql-align-left {
+  text-align: left;
+}
+.ql-align-right {
+  text-align: right;
+}
+.a {
+  font-family: SimSun
+}
+.b {
+  font-family: SimHei
+}
+.c {
+  font-family: Microsoft YaHei
+}
+.d {
+  font-family: Microsoft JhengHei
+}

@@ -1,0 +1,29 @@
+/* pages/logs/logs.wxss */
+contact-button {
+  min-width:5rem;
+background-color:#ff7100;
+border-color:#ff7100;
+color:#fff;
+height:100rpx;
+border-radius:0;
+line-height:100rpx;
+padding:0 20px;
+width:100%;
+text-align: center;
+}
+image {
+  width: 100%;
+}
+.deg button{border:none;height:90rpx;background:none;border-radius:0;line-height:90rpx;color:#333;font-size:20rpx;text-align:center;}  
+    .deg button:after{border:none;} 
+button {
+  width: 90%;
+  margin: 5% 5%;
+  background-color: #2277da;
+  color: #fff;
+}
+.logTitle {
+  margin: 5% 5%;
+  font-size: 35rpx;
+  color: #333;
+}

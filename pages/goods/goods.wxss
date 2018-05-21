@@ -1,0 +1,37 @@
+/* pages/goods/goods.wxss */
+
+.goodMes {
+  font-size: 28rpx;
+}
+.goodImg {
+  width: 100%;
+}
+.goodTitle {
+  font-size:33rpx;
+  padding:20rpx 35rpx 20rpx 35rpx;
+}
+.goodDesc {
+  padding:0rpx 35rpx 20rpx 35rpx;
+  color:gray;
+  line-height:36rpx;
+  font-size:26rpx;
+}
+image {
+  width: 100%;
+}
+rich-text {
+  word-wrap: break-word;
+  font-family: SimSun
+}
+rich-text img {
+  width: 100px;
+}
+h1 {
+
+}
+.ql-align-center {
+  text-align: center;
+}
+p {
+  text-indent: 2em;
+}

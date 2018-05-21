@@ -1,0 +1,72 @@
+<!--pages/call/call.wxml-->
+<import src="../../template/item-template.wxml"/>
+<view class="imgBox">
+  <image mode="widthFix" src="{{globalData.globalData.contact_us.img}}"></image>
+</view>
+<view class="wrap">
+  <!-- <form>
+    <view class="call_name call_form clear">
+      <view class="call_name_front">姓名</view>
+      <view class="call_name_end">
+        <input type="text" placeholder="请输入名字" />
+      </view>
+    </view>
+    <view class="call_contact call_form clear">
+      <view class="call_name_front">联系方式</view>
+      <view class="call_name_end">
+        <input type="text" placeholder="请输入手机号" />
+      </view>
+    </view>
+    <view class="call_contact call_form clear">
+      <view class="call_name_front">邮箱</view>
+      <view class="call_name_end">
+        <input type="text" placeholder="请输入邮箱(选填)" />
+      </view>
+    </view>
+    <view class="call_contact call_form clear">
+      <view class="call_name_front">网址</view>
+      <view class="call_name_end">
+        <input type="text" placeholder="请输入网址(选填)" />
+      </view>
+    </view>
+    <button bindtap="buttonTap">
+      立即注册
+    </button>
+  </form> -->
+  <form class="form" bindsubmit="formSubmit" bindreset="formReset">
+  <view class="call_contact call_form clear">
+    <view class="call_name_front">姓名</view>
+    <input maxlength="20" name="cname" placeholder="请输入姓名（可选）" focus/>
+  </view>
+  <view  class="call_contact call_form clear">
+    <view class="call_name_front">邮箱</view>
+    <input maxlength="20" name="email" placeholder="请输入邮箱（可选）" />
+  </view>
+  <view  class="call_contact call_form clear">
+    <view class="call_name_front">电话</view>
+    <input maxlength="20" name="tel" placeholder="请输入电话（可选）" />
+  </view>
+  <view  class="call_contact call_form clear">
+    <view class="call_name_front">QQ</view>
+    <input maxlength="11" name="qq" placeholder="请输入QQ（可选）" />
+  </view>
+  <view  class="call_contact call_form clear">
+    <view class="call_name_front">城市</view>
+    <input maxlength="10" name="localcity" placeholder="请输入您所在的城市（可选）" />
+  </view>
+  <view  class="call_contact call_form clear">
+    <view class="call_name_front">地址</view>
+    <input maxlength="25" name="address" placeholder="请输入地址（可选）" />
+  </view>
+  <view  class="call_contact call_form clear">
+    <view class="call_name_front">需求</view>
+    <input maxlength="20" name="demand" placeholder="请输入需求（可选）" />
+  </view>
+  <view  class="call_contact clear">
+    <button formType="submit" class="confirm-btn">提交</button>
+    <!-- <button formType="reset" class="confirm-btn">重置</button> -->
+  </view>
+</form>
+</view>
+<template is="contact" data="{{...globalData.globalData.contact}}"></template>
+

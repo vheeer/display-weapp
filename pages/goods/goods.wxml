@@ -1,0 +1,13 @@
+<!--pages/goods/goods.wxml-->
+<import src="../../template/item-template.wxml"/> 
+<!-- <text>pages/goods/goods.wxml</text> -->
+<!-- <view>{{goodPageNow.title}}</view> -->
+<!-- <view class="goodTitle">{{goodPageNow.title}}</view>
+<template is="remark" data="{{...goodPageNow}}"></template> -->
+
+<template is="intro" data="{{...goodPageNow}}"></template>
+<rich-text nodes="{{goodPageNow.richtext}}" bindtap="tap"></rich-text>
+<template is="contact" data="{{...globalData.globalData.contact}}"></template>
+<!-- <block wx:for="{{goodPageNow.goodImgList}}" wx:key="index">
+  <image src="{{item.url}}" mode="" data-index="{{index}}" bindload="imageLoad" ></image>
+</block> -->

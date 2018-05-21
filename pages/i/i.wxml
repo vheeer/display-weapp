@@ -1,0 +1,17 @@
+
+<view class="gy1">
+    <image mode="widthFix" src="{{globalData.globalData.company.img}}"></image>
+</view>
+ <view class="text">
+        <view class="line_y"></view>
+        <text>关于企业</text>
+    </view> 
+
+     <view class="text2">
+        <text>{{globalData.globalData.company.desc}}</text>
+    </view> 
+
+<!-- <view class="gy">
+    <image src="https://67668077.yinmudianying.club/5839423e771e8_1024.jpg"></image>
+</view> -->
+ <!-- <button type="default" bindtap="calling">点击拨打客服电话</button>  -->

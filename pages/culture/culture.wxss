@@ -1,0 +1,15 @@
+/* pages/culture/culture.wxss */
+.server {
+  margin: 5% 5%;
+  font-size: 35rpx;
+  color: #333;
+}
+image {
+  width: 100%;
+}
+.intro {
+  text-indent: 2;
+  line-height: 23px;
+  text-indent:2em;
+
+}

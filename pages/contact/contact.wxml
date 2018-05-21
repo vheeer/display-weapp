@@ -1,0 +1,6 @@
+<!--pages/contact/contact.wxml-->
+
+<view class="contact">
+  <text class="way">xxxxxxxxx电话</text><text class="value">13068633855</text>
+  <text class="way">邮箱</text><text class="value">ostro@126.com</text>
+</view>
